@@ -1,6 +1,4 @@
 __pycache__
 .DS_Store
 .empty
-build/
-dist/
-timebar.spec
+timebar_v1.0.0/
