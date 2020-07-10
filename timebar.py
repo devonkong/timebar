@@ -23,6 +23,7 @@ class MenuBarIcon(rumps.App):
             'title': '⧗',
             'start': 'Start',
             'stop': 'Stop',
+            'continue': 'Continue',
             'reset': 'Reset',
             'settings': 'Settings',
             'show_timer': 'Show elapsed time',
@@ -115,7 +116,7 @@ class MenuBarIcon(rumps.App):
             self.reset_button.set_callback(None)
         elif not self.is_timing and not self.is_reset:  # Timer is paused
             print('debug: not timing, not reset')
-            self.start_stop_button.title = self.config['start']
+            self.start_stop_button.title = self.config['continue']
             self.reset_button.set_callback(self.reset_elapsed_time)
         elif not self.is_timing and self.is_reset:  # Timer is stopped and reset
             print('debug: not timing, reset')
