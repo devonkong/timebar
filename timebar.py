@@ -42,6 +42,8 @@ class MenuBarIcon(rumps.App):
             self.reset_button,
             [self.settings_button, [self.hide_timer_button]]
             ]
+        # Start timer immediately on start
+        self.start_stop()
 
     def start_stop(self, *args):
         """Starts or stops timer when timer button is pressed."""
